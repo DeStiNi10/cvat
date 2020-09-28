@@ -11,6 +11,7 @@ import Text from 'antd/lib/typography/Text';
 
 import ActionsMenuContainer from 'containers/actions-menu/actions-menu';
 import { MenuIcon } from 'icons';
+import { MenuIcon1 } from 'icons';
 
 interface DetailsComponentProps {
     taskInstance: any;
@@ -35,8 +36,8 @@ export default function DetailsComponent(props: DetailsComponentProps): JSX.Elem
                 }
                 >
                     <Button size='large'>
-                        <Text className='cvat-text-color'>Actions</Text>
-                        <Icon className='cvat-menu-icon' component={MenuIcon} />
+                        <Text className='cvat-text-color-black'>Actions</Text>
+                        <Icon className='cvat-menu-icon-black' component={MenuIcon1} />
                     </Button>
                 </Dropdown>
             </Col>

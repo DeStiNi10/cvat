@@ -8,6 +8,7 @@ import SVGCVATLogo from './assets/cvat-logo.svg';
 import SVGAccountIcon from './assets/account-icon.svg';
 import SVGEmptyTasksIcon from './assets/empty-tasks-icon.svg';
 import SVGMenuIcon from './assets/menu-icon.svg';
+import SVGMenuIcon1 from './assets/menu-icon-black.svg';
 import SVGCursorIcon from './assets/cursor-icon.svg';
 import SVGMoveIcon from './assets/move-icon.svg';
 import SVGRotateIcon from './assets/rotate-icon.svg';
@@ -43,7 +44,7 @@ import SVGCubeIcon from './assets/cube-icon.svg';
 import SVGResetPerspectiveIcon from './assets/reset-perspective.svg';
 import SVGColorizeIcon from './assets/colorize-icon.svg';
 import SVGAITools from './assets/ai-tools-icon.svg';
-
+import SVGRotateIcon1 from './assets/rotate-icon1.svg';
 
 export const CVATLogo = React.memo(
     (): JSX.Element => <SVGCVATLogo />,
@@ -57,6 +58,9 @@ export const EmptyTasksIcon = React.memo(
 export const MenuIcon = React.memo(
     (): JSX.Element => <SVGMenuIcon />,
 );
+export const MenuIcon1 = React.memo(
+    (): JSX.Element => <SVGMenuIcon1 />,
+);
 export const CursorIcon = React.memo(
     (): JSX.Element => <SVGCursorIcon />,
 );
@@ -65,6 +69,9 @@ export const MoveIcon = React.memo(
 );
 export const RotateIcon = React.memo(
     (): JSX.Element => <SVGRotateIcon />,
+);
+export const RotateIcon1 = React.memo(
+    (): JSX.Element => <SVGRotateIcon1 />,
 );
 export const FitIcon = React.memo(
     (): JSX.Element => <SVGFitIcon />,

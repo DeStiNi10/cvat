@@ -59,7 +59,7 @@ function ItemAttributeComponent(props: Props): JSX.Element {
                         changeAttribute(attrID, value);
                     }}
                 >
-                    <Text style={attrNameStyle} className='cvat-text'>
+                    <Text style={attrNameStyle} className='cvat-text'>   {/*test*/}
                         {attrName}
                     </Text>
                 </Checkbox>

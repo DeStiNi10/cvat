@@ -56,7 +56,7 @@ function ItemAttributesComponent(props: Props): JSX.Element {
                 onChange={collapse}
             >
                 <Collapse.Panel
-                    header={<span style={{ fontSize: '11px' }}>Details</span>}
+                    header={<span style={{ color: 'white' , fontSize: '11px' }}>Details</span>}
                     key='details'
                 >
                     { sorted.map((attribute: any): JSX.Element => (

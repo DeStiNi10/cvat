@@ -46,7 +46,7 @@ class BasicConfigurationForm extends React.PureComponent<Props> {
 
         return (
             <Form onSubmit={(e: React.FormEvent): void => e.preventDefault()}>
-                <Form.Item hasFeedback label={<span>Name</span>}>
+                <Form.Item hasFeedback label={<span className="cvat-text-color">Name</span>}>
                     { getFieldDecorator('name', {
                         rules: [{
                             required: true,

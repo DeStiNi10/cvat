@@ -101,6 +101,29 @@
     margin-bottom: 0;
     font-size: 20px;
     font-weight: bold;
+    color: #fff;
+}
+
+h4.ant-typography, .ant-typography h4 {
+    margin-bottom: 0.5em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.ant-checkbox+span {
+    padding-right: 8px;
+    padding-left: 8px;
+    color: white;
+}
+
+.ant-table-thead>tr>th {
+    color: #fafafa;
+}
+
+.basic-task-spec-color {
+    color: white;
 }
 
 /* Pagination in center */
@@ -122,4 +145,8 @@
 
 .cvat-job-annotation-color {
     color: $pending-progress-color;
+}
+
+.cvat-text-color-black {
+    color: black;
 }

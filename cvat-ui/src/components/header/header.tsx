@@ -260,8 +260,8 @@ function HeaderContainer(props: Props): JSX.Element {
     return (
         <Layout.Header className='cvat-header'>
             <div className='cvat-left-header'>
-                <Icon className='cvat-logo-icon' component={CVATLogo} />
-
+                <Text className='cvat-logo-color-1'>AIML&nbsp;</Text>
+                <Text className='cvat-logo-color-2'>Data</Text>
                 <Button
                     className='cvat-header-button'
                     type='link'
@@ -310,7 +310,7 @@ function HeaderContainer(props: Props): JSX.Element {
                     )}
             </div>
             <div className='cvat-right-header'>
-                <Button
+                {/* <Button
                     className='cvat-header-button'
                     type='link'
                     href={GITHUB_URL}
@@ -325,8 +325,8 @@ function HeaderContainer(props: Props): JSX.Element {
                 >
                     <Icon type='github' />
                     <Text className='cvat-text-color'>GitHub</Text>
-                </Button>
-                <Button
+                </Button> */}
+                {/* <Button
                     className='cvat-header-button'
                     type='link'
                     href={`${tool.server.host}/documentation/user_guide.html`}
@@ -341,11 +341,11 @@ function HeaderContainer(props: Props): JSX.Element {
                 >
                     <Icon type='question-circle' />
                     Help
-                </Button>
+                </Button> */}
                 <Dropdown overlay={menu} className='cvat-header-menu-dropdown'>
                     <span>
                         <Icon className='cvat-header-account-icon' component={AccountIcon} />
-                        <Text strong>
+                        <Text className= "cvat-header-username">
                             {user.username.length > 14 ? `${user.username.slice(0, 10)} ...` : user.username}
                         </Text>
                         <Icon className='cvat-header-menu-icon' type='caret-down' />

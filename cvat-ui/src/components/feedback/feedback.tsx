@@ -98,7 +98,7 @@ export default function Feedback(): JSX.Element {
                 content={renderContent()}
                 visible={visible}
             >
-                <Button
+                {/* <Button
                     style={{ color: '#ff4d4f' }}
                     className='cvat-feedback-button'
                     type='link'
@@ -108,7 +108,7 @@ export default function Feedback(): JSX.Element {
                 >
                     { visible ? <Icon type='close-circle' theme='filled' />
                         : <Icon type='message' theme='twoTone' /> }
-                </Button>
+                </Button> */}
             </Popover>
         </>
     );

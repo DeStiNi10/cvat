@@ -374,7 +374,7 @@ export default class DetailsComponent extends React.PureComponent<Props, State> 
                 <Col>
                     <Text strong className='cvat-text-color'>Issue Tracker</Text>
                     <br />
-                    <Text
+                    <Text className="basic-task-spec-color"
                         editable={{
                             editing: bugTrackerEditing,
                             onStart,

@@ -46,7 +46,7 @@ function LabelItemComponent(props: Props): JSX.Element {
                 <Button style={{ background: labelColor }} className='cvat-label-item-color-button' />
             </Col>
             <Col span={14}>
-                <Text strong className='cvat-text'>{labelName}</Text>
+                <Text strong className='cvat-text-color'>{labelName}</Text>
             </Col>
             <Col span={3}>
                 { statesLocked
