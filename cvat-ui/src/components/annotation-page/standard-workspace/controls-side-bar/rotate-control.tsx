@@ -8,6 +8,7 @@ import Tooltip from 'antd/lib/tooltip';
 import Popover from 'antd/lib/popover';
 
 import { RotateIcon } from 'icons';
+import { RotateIcon1 } from 'icons';
 import { Rotation } from 'reducers/interfaces';
 
 interface Props {
@@ -33,7 +34,7 @@ function RotateControl(props: Props): JSX.Element {
                         <Icon
                             className='cvat-rotate-canvas-controls-left'
                             onClick={(): void => rotateFrame(Rotation.ANTICLOCKWISE90)}
-                            component={RotateIcon}
+                            component={RotateIcon1}
                         />
                     </Tooltip>
                     <Tooltip
@@ -44,7 +45,7 @@ function RotateControl(props: Props): JSX.Element {
                         <Icon
                             className='cvat-rotate-canvas-controls-right'
                             onClick={(): void => rotateFrame(Rotation.CLOCKWISE90)}
-                            component={RotateIcon}
+                            component={RotateIcon1}
                         />
                     </Tooltip>
                 </>

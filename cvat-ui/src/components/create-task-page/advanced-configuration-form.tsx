@@ -231,7 +231,7 @@ class AdvancedConfigurationForm extends React.PureComponent<Props> {
                     initialValue: false,
                 })(
                     <Checkbox>
-                        <Text className='cvat-text-color'>Use LFS (Large File Support):</Text>
+                        <Text className='cvat-text-color-black'>Use LFS (Large File Support):</Text>
                     </Checkbox>,
                 )}
             </Form.Item>
@@ -326,7 +326,7 @@ class AdvancedConfigurationForm extends React.PureComponent<Props> {
                     valuePropName: 'checked',
                 })(
                     <Checkbox>
-                        <Text className='cvat-text-color'>Use zip chunks</Text>
+                        <Text className='cvat-text-color-black'>Use zip chunks</Text>
                     </Checkbox>,
                 )}
             </Form.Item>
@@ -342,7 +342,7 @@ class AdvancedConfigurationForm extends React.PureComponent<Props> {
                     valuePropName: 'checked',
                 })(
                     <Checkbox>
-                        <Text className='cvat-text-color'>Use cache</Text>
+                        <Text className='cvat-text-color-black'>Use cache</Text>
                     </Checkbox>,
                 )}
             </Form.Item>

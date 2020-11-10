@@ -26,7 +26,7 @@ function renderInputElement(parameters: InputElementParameters): JSX.Element {
 
     const renderCheckbox = (): JSX.Element => (
         <>
-            <Text strong>Checkbox: </Text>
+            <Text strong className='cvat-text-color'>Checkbox: </Text>
             <div className='attribute-annotation-sidebar-attr-elem-wrapper'>
                 <Checkbox
                     onChange={(event: CheckboxChangeEvent): void => onChange(event.target.checked ? 'true' : 'false')}
@@ -38,7 +38,7 @@ function renderInputElement(parameters: InputElementParameters): JSX.Element {
 
     const renderSelect = (): JSX.Element => (
         <>
-            <Text strong>Values: </Text>
+            <Text strong className='cvat-text-color'>Values: </Text>
             <div className='attribute-annotation-sidebar-attr-elem-wrapper'>
                 <Select
                     value={currentValue}
@@ -59,7 +59,7 @@ function renderInputElement(parameters: InputElementParameters): JSX.Element {
 
     const renderRadio = (): JSX.Element => (
         <>
-            <Text strong>Values: </Text>
+            <Text strong className='cvat-text-color'>Values: </Text>
             <div className='attribute-annotation-sidebar-attr-elem-wrapper'>
                 <Radio.Group value={currentValue} onChange={(event: RadioChangeEvent) => onChange(event.target.value)}>
                     {values.map(
@@ -84,7 +84,7 @@ function renderInputElement(parameters: InputElementParameters): JSX.Element {
 
     const renderText = (): JSX.Element => (
         <>
-            {inputType === 'number' ? <Text strong>Number: </Text> : <Text strong>Text: </Text>}
+            {inputType === 'number' ? <Text strong className='cvat-text-color'>Number: </Text> : <Text strong className='cvat-text-color'>Text: </Text>}
             <div className='attribute-annotation-sidebar-attr-elem-wrapper'>
                 <Input
                     autoFocus
@@ -165,12 +165,12 @@ function renderList(parameters: ListParameters): JSX.Element | null {
             <div className='attribute-annotation-sidebar-attr-list-wrapper'>
                 <GlobalHotKeys keyMap={keyMap as KeyMap} handlers={handlers} allowChanges />
                 <div>
-                    <Text strong>0:</Text>
-                    <Text>{` ${sortedValues[0]}`}</Text>
+                    <Text strong className='cvat-text-color'>0:</Text>
+                    <Text className='cvat-text-color'>{` ${sortedValues[0]}`}</Text>
                 </div>
                 <div>
-                    <Text strong>1:</Text>
-                    <Text>{` ${sortedValues[1]}`}</Text>
+                    <Text strong className='cvat-text-color'>1:</Text>
+                    <Text className='cvat-text-color'>{` ${sortedValues[1]}`}</Text>
                 </div>
             </div>
         );
@@ -207,8 +207,8 @@ function renderList(parameters: ListParameters): JSX.Element | null {
                 {filteredValues.map(
                     (value: string, index: number): JSX.Element => (
                         <div key={value}>
-                            <Text strong>{`${index}:`}</Text>
-                            <Text>{` ${value}`}</Text>
+                            <Text strong className='cvat-text-color'>{`${index}:`}</Text>
+                            <Text className='cvat-text-color'>{` ${value}`}</Text>
                         </div>
                     ),
                 )}
@@ -220,16 +220,16 @@ function renderList(parameters: ListParameters): JSX.Element | null {
         return (
             <div className='attribute-annotation-sidebar-attr-list-wrapper'>
                 <div>
-                    <Text strong>From:</Text>
-                    <Text>{` ${values[0]}`}</Text>
+                    <Text strong className='cvat-text-color'>From:</Text>
+                    <Text className='cvat-text-color'>{` ${values[0]}`}</Text>
                 </div>
                 <div>
-                    <Text strong>To:</Text>
-                    <Text>{` ${values[1]}`}</Text>
+                    <Text strong className='cvat-text-color'>To:</Text>
+                    <Text className='cvat-text-color'>{` ${values[1]}`}</Text>
                 </div>
                 <div>
-                    <Text strong>Step:</Text>
-                    <Text>{` ${values[2]}`}</Text>
+                    <Text strong className='cvat-text-color'>Step:</Text>
+                    <Text className='cvat-text-color'>{` ${values[2]}`}</Text>
                 </div>
             </div>
         );

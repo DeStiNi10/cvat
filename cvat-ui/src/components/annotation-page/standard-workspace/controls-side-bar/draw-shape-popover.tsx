@@ -99,10 +99,10 @@ function DrawShapePopoverComponent(props: Props): JSX.Element {
                                 value={rectDrawingMethod}
                                 onChange={onChangeRectDrawingMethod}
                             >
-                                <Radio value={RectDrawingMethod.CLASSIC} style={{ width: 'auto' }}>
+                                <Radio value={RectDrawingMethod.CLASSIC} style={{ width: 'auto', color: 'white' }}>
                                     By 2 Points
                                 </Radio>
-                                <Radio value={RectDrawingMethod.EXTREME_POINTS} style={{ width: 'auto' }}>
+                                <Radio value={RectDrawingMethod.EXTREME_POINTS} style={{ width: 'auto', color: 'white' }}>
                                     By 4 Points
                                 </Radio>
                             </Radio.Group>
@@ -124,10 +124,10 @@ function DrawShapePopoverComponent(props: Props): JSX.Element {
                                 value={cuboidDrawingMethod}
                                 onChange={onChangeCuboidDrawingMethod}
                             >
-                                <Radio value={CuboidDrawingMethod.CLASSIC} style={{ width: 'auto' }}>
+                                <Radio value={CuboidDrawingMethod.CLASSIC} style={{ width: 'auto', color: 'white' }}>
                                     From rectangle
                                 </Radio>
-                                <Radio value={CuboidDrawingMethod.CORNER_POINTS} style={{ width: 'auto' }}>
+                                <Radio value={CuboidDrawingMethod.CORNER_POINTS} style={{ width: 'auto', color: 'white' }}>
                                     By 4 Points
                                 </Radio>
                             </Radio.Group>

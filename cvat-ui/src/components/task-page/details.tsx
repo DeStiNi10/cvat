@@ -345,7 +345,7 @@ export default class DetailsComponent extends React.PureComponent<Props, State> 
                             Issue Tracker
                         </Text>
                         <br />
-                        <Text editable={{ onChange: onChangeValue }}>{bugTracker}</Text>
+                        <Text className="basic-task-spec-color" editable={{ onChange: onChangeValue }}>{bugTracker}</Text>
                         <Button
                             type='ghost'
                             size='small'
@@ -370,13 +370,13 @@ export default class DetailsComponent extends React.PureComponent<Props, State> 
                         Issue Tracker
                     </Text>
                     <br />
-                    <Text
+                    <Text className='cvat-text-color'
                         editable={{
                             editing: bugTrackerEditing,
                             onStart,
                             onChange: onChangeValue,
                         }}
-                    >
+                        >
                         {bugTrackerEditing ? '' : 'Not specified'}
                     </Text>
                 </Col>
