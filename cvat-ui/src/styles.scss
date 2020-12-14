@@ -22,11 +22,31 @@ hr {
     color: $text-color;
 }
 
+.cvat-logo-color-1 {
+    color: $logo-color1;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cvat-logo-color-2 {
+    color: $logo-color2;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
 .cvat-title {
     font-weight: 400;
     font-size: 21px;
     color: $text-color;
     padding-top: 5px;
+}
+
+.cvat-header-username {
+    font-weight: 700;
+    color: $text-color;
 }
 
 .ant-slider {
@@ -67,4 +87,12 @@ hr {
     left: 0;
     z-index: 9999;
     pointer-events: none;
+}
+
+.ant-layout {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    min-height: 0;
+    background: #212121;
 }

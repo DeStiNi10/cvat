@@ -105,6 +105,7 @@
     margin-bottom: 0;
     font-size: 20px;
     font-weight: bold;
+    color: #fff;
 }
 
 /* Pagination in center */
@@ -117,6 +118,7 @@
 }
 
 .cvat-job-item-status {
+    color: black;
     .cvat-job-annotation-color,
     .cvat-job-validation-color,
     .cvat-job-completed-color {
@@ -150,4 +152,40 @@
 
 .cvat-job-annotation-color {
     color: $pending-progress-color;
+}
+
+h5.ant-typography, .ant-typography h5 {
+    margin-bottom: 0.5em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.ant-checkbox+span {
+    padding-right: 8px;
+    padding-left: 8px;
+    color: white;
+}
+
+.ant-table-thead>tr>th {
+    color: #000;
+}
+
+.basic-task-spec-color {
+    color: white;
+}
+
+.cvat-text-color-black {
+    color: black;
+}
+
+.ant-descriptions-item-content {
+    display: table-cell;
+    flex: 1;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5715;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }

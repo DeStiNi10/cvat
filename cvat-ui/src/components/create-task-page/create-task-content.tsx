@@ -264,7 +264,7 @@ class CreateTaskContent extends React.PureComponent<Props & RouteComponentProps,
         return (
             <Col span={24}>
                 <Collapse>
-                    <Collapse.Panel key='1' header={<Text className='cvat-title'>Advanced configuration</Text>}>
+                    <Collapse.Panel key='1' header={<Text className='cvat-title-black'>Advanced configuration</Text>}>
                         <AdvancedConfigurationForm
                             installedGit={installedGit}
                             activeFileManagerTab={activeFileManagerTab}

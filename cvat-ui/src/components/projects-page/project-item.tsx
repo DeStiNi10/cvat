@@ -81,11 +81,11 @@ export default function ProjectItemComponent(props: Props): JSX.Element {
                         <div>
                             {ownerName && (
                                 <>
-                                    <Text type='secondary'>{`Created ${ownerName ? `by ${ownerName}` : ''}`}</Text>
+                                    <Text className='cvat-text-color-black'>{`Created ${ownerName ? `by ${ownerName}` : ''}`}</Text>
                                     <br />
                                 </>
                             )}
-                            <Text type='secondary'>{`Last updated ${updated}`}</Text>
+                            <Text className='cvat-text-color-black'>{`Last updated ${updated}`}</Text>
                         </div>
                         <div>
                             <Dropdown overlay={<ProjectActionsMenuComponent projectInstance={projectInstance} />}>

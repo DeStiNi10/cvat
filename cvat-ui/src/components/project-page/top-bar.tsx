@@ -13,6 +13,7 @@ import Text from 'antd/lib/typography/Text';
 import { Project } from 'reducers/interfaces';
 import ActionsMenu from 'components/projects-page/actions-menu';
 import { MenuIcon } from 'icons';
+import { MenuIcon1 } from 'icons';
 
 interface DetailsComponentProps {
     projectInstance: Project;
@@ -34,8 +35,8 @@ export default function ProjectTopBar(props: DetailsComponentProps): JSX.Element
             <Col className='cvat-project-top-bar-actions'>
                 <Dropdown overlay={<ActionsMenu projectInstance={projectInstance.instance} />}>
                     <Button size='large'>
-                        <Text className='cvat-text-color'>Actions</Text>
-                        <Icon className='cvat-menu-icon' component={MenuIcon} />
+                        <Text className='cvat-text-color-black'>Actions</Text>
+                        <Icon className='cvat-menu-icon-black' component={MenuIcon1} />
                     </Button>
                 </Dropdown>
             </Col>

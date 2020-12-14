@@ -52,7 +52,7 @@ export default function BugTrackerEditorComponent(props: Props): JSX.Element {
                         Issue Tracker
                     </Text>
                     <br />
-                    <Text editable={{ onChange: onChangeValue }}>{bugTracker}</Text>
+                    <Text className="basic-task-spec-color" editable={{ onChange: onChangeValue }}>{bugTracker}</Text>
                     <Button
                         type='ghost'
                         size='small'
@@ -77,7 +77,7 @@ export default function BugTrackerEditorComponent(props: Props): JSX.Element {
                     Issue Tracker
                 </Text>
                 <br />
-                <Text
+                <Text className='cvat-text-color'
                     editable={{
                         editing: bugTrackerEditing,
                         onStart,

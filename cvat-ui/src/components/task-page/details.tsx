@@ -129,7 +129,7 @@ export default class DetailsComponent extends React.PureComponent<Props, State> 
 
         return (
             <Title
-                level={4}
+                level={5}
                 editable={{
                     onChange: (value: string): void => {
                         this.setState({

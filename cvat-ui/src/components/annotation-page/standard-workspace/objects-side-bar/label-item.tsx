@@ -59,7 +59,7 @@ function LabelItemComponent(props: Props): JSX.Element {
                 </Button>
             </Col>
             <Col span={14}>
-                <Text strong className='cvat-text'>
+                <Text strong className='cvat-text-color'>
                     {labelName}
                 </Text>
             </Col>

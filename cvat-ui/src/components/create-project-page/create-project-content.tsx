@@ -25,7 +25,7 @@ function NameConfigurationForm({ formRef }: { formRef: RefObject<FormInstance> }
             <Form.Item
                 name='name'
                 hasFeedback
-                label='Name'
+                label={<label style={{ color: "white" }}>Name</label>}
                 rules={[
                     {
                         required: true,
@@ -44,8 +44,8 @@ function AdvanvedConfigurationForm({ formRef }: { formRef: RefObject<FormInstanc
         <Form layout='vertical' ref={formRef}>
             <Form.Item
                 name='bug_tracker'
-                label='Issue tracker'
-                extra='Attach issue tracker where the project is described'
+                label={<label style={{ color: "white" }}>Issue tracker</label>}
+                extra={<extra style={{ color: "white" }}>Attach issue tracker where the project is described</extra>}
                 hasFeedback
                 rules={[
                     {

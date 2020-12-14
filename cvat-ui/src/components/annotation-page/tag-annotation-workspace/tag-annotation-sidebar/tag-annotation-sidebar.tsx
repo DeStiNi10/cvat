@@ -211,7 +211,7 @@ function TagAnnotationSidebar(props: StateToProps & DispatchToProps): JSX.Elemen
                 </span>
                 <Row justify='start' className='cvat-tag-annotation-sidebar-label-select'>
                     <Col>
-                        <Text strong>Tag label</Text>
+                        <Text strong className='cvat-text-color'>Tag label</Text>
                         <LabelSelector labels={labels} value={selectedLabelID} onChange={onChangeLabel} />
                     </Col>
                 </Row>
@@ -237,7 +237,7 @@ function TagAnnotationSidebar(props: StateToProps & DispatchToProps): JSX.Elemen
                 </Row>
                 <Row justify='start' className='cvat-tag-annotation-sidebar-frame-tags'>
                     <Col>
-                        <Text strong>Frame tags:&nbsp;</Text>
+                        <Text strong className='cvat-text-color'>Frame tags:&nbsp;</Text>
                         {frameTags.map((tag: any) => (
                             <Tag
                                 className='cvat-tag-annotation-sidebar-frame-tag-label'
@@ -260,15 +260,15 @@ function TagAnnotationSidebar(props: StateToProps & DispatchToProps): JSX.Elemen
                 </Row>
                 <Row justify='center' className='cvat-tag-annotation-sidebar-shortcut-help'>
                     <Col>
-                        <Text>
+                        <Text className='cvat-text-color'>
                             Use&nbsp;
-                            <Text code>N</Text>
+                            <Text code className='cvat-text-color'>N</Text>
                             &nbsp;or digits&nbsp;
-                            <Text code>0-9</Text>
+                            <Text code className='cvat-text-color'>0-9</Text>
                             &nbsp;to add selected tag
                             <br />
                             or&nbsp;
-                            <Text code>→</Text>
+                            <Text code className='cvat-text-color'>→</Text>
                             &nbsp;to skip frame
                         </Text>
                     </Col>

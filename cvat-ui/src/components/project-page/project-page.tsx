@@ -73,7 +73,7 @@ export default function ProjectPageComponent(): JSX.Element {
                 <DetailsComponent project={project} />
                 <Row justify='space-between' align='middle' className='cvat-project-page-tasks-bar'>
                     <Col>
-                        <Title level={4}>Tasks</Title>
+                        <Title level={5}>Tasks</Title>
                     </Col>
                     <Col>
                         <Button

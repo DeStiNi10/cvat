@@ -33,7 +33,7 @@ export default function DetailsComponent(props: DetailsComponentProps): JSX.Elem
             <Row>
                 <Col>
                     <Title
-                        level={4}
+                        level={5}
                         editable={{
                             onChange: (value: string): void => {
                                 setProjectName(value);

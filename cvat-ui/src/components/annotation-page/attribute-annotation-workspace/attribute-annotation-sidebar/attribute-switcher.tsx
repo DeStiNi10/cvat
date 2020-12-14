@@ -30,8 +30,8 @@ function AttributeSwitcher(props: Props): JSX.Element {
                 </Button>
             </Tooltip>
             <Tooltip title={title} mouseLeaveDelay={0}>
-                <Text className='cvat-text'>{currentAttribute}</Text>
-                <Text strong>{` [${currentIndex + 1}/${attributesCount}]`}</Text>
+                <Text className='cvat-text-color'>{currentAttribute}</Text>
+                <Text strong className='cvat-text-color'>{` [${currentIndex + 1}/${attributesCount}]`}</Text>
             </Tooltip>
             <Tooltip title={`Next attribute ${normalizedKeyMap.NEXT_ATTRIBUTE}`} mouseLeaveDelay={0}>
                 <Button disabled={attributesCount <= 1} onClick={() => nextAttribute(1)}>

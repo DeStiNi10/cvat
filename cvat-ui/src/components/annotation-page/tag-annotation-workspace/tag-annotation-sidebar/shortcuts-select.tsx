@@ -84,7 +84,7 @@ const ShortcutsSelect = (props: Props): JSX.Element => {
             <GlobalHotKeys keyMap={keyMap as KeyMap} handlers={handlers} allowChanges />
             <Row>
                 <Col>
-                    <Text strong>Shortcuts for labels:</Text>
+                    <Text strong className='cvat-text-color'>Shortcuts for labels:</Text>
                 </Col>
             </Row>
             {shift(Object.keys(shortcutLabelMap), 1)
@@ -92,7 +92,7 @@ const ShortcutsSelect = (props: Props): JSX.Element => {
                 .map((id) => (
                     <Row key={id}>
                         <Col>
-                            <Text strong>{`Key ${id}:`}</Text>
+                            <Text strong className='cvat-text-color'>{`Key ${id}:`}</Text>
                             <Select
                                 value={`${shortcutLabelMap[Number.parseInt(id, 10)]}`}
                                 onChange={(value: string) => {
@@ -102,7 +102,7 @@ const ShortcutsSelect = (props: Props): JSX.Element => {
                                 className='cvat-tag-annotation-label-select'
                             >
                                 <Select.Option value=''>
-                                    <Text type='secondary'>None</Text>
+                                    <Text className='cvat-text-color-black'>None</Text>
                                 </Select.Option>
                                 {(labels as any[]).map((label: any) => (
                                     <Select.Option key={label.id} value={`${label.id}`}>

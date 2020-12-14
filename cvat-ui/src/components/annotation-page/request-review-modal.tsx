@@ -45,19 +45,19 @@ export default function RequestReviewModal(): JSX.Element | null {
         >
             <Row justify='start'>
                 <Col>
-                    <Title level={4}>Assign a user who is responsible for review</Title>
+                    <Title level={4} className='cvat-text-color-black'>Assign a user who is responsible for review</Title>
                 </Col>
             </Row>
             <Row align='middle' justify='start'>
                 <Col>
-                    <Text type='secondary'>Reviewer: </Text>
+                    <Text className='cvat-text-color-black'>Reviewer: </Text>
                 </Col>
                 <Col offset={1}>
                     <UserSelector value={reviewer} onSelect={setReviewer} />
                 </Col>
             </Row>
             <Row justify='start'>
-                <Text type='secondary'>You might not be able to change the job after this action. Continue?</Text>
+                <Text className='cvat-text-color-black'>You might not be able to change the job after this action. Continue?</Text>
             </Row>
         </Modal>
     );

@@ -50,7 +50,7 @@ function ItemAttributesComponent(props: Props): JSX.Element {
                 activeKey={collapsed ? [] : ['details']}
                 onChange={collapse}
             >
-                <Collapse.Panel header={<span style={{ fontSize: '11px' }}>Details</span>} key='details'>
+                <Collapse.Panel header={<span style={{ color: 'white', fontSize: '11px' }}>Details</span>} key='details'>
                     {sorted.map(
                         (attribute: any): JSX.Element => (
                             <Row

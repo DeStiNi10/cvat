@@ -105,6 +105,7 @@ function JobListComponent(props: Props & RouteComponentProps): JSX.Element {
             title: 'Job',
             dataIndex: 'job',
             key: 'job',
+            className: 'cvat-text-color-black',
             render: (id: number): JSX.Element => (
                 <div>
                     <Button
@@ -124,7 +125,7 @@ function JobListComponent(props: Props & RouteComponentProps): JSX.Element {
             title: 'Frames',
             dataIndex: 'frames',
             key: 'frames',
-            className: 'cvat-text-color',
+            className: 'cvat-text-color-black',
         },
         {
             title: 'Status',
@@ -156,13 +157,13 @@ function JobListComponent(props: Props & RouteComponentProps): JSX.Element {
             title: 'Started on',
             dataIndex: 'started',
             key: 'started',
-            className: 'cvat-text-color',
+            className: 'cvat-text-color-black',
         },
         {
             title: 'Duration',
             dataIndex: 'duration',
             key: 'duration',
-            className: 'cvat-text-color',
+            className: 'cvat-text-color-black',
         },
         {
             title: 'Assignee',

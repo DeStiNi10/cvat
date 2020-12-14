@@ -47,7 +47,7 @@ export default class BasicConfigurationForm extends React.PureComponent<Props> {
                 <Form.Item
                     hasFeedback
                     name='name'
-                    label={<span>Name</span>}
+                    label={<span className='cvat-text-color'>Name</span>}
                     rules={[
                         {
                             required: true,

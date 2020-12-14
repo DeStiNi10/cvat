@@ -163,12 +163,12 @@ class AdvancedConfigurationForm extends React.PureComponent<Props> {
     private renderCopyDataChechbox(): JSX.Element {
         return (
             <Form.Item
-                help='If you have a low data transfer rate over the network you can copy data into CVAT to speed up work'
+                help='If you have a low data transfer rate over the network you can copy data into AIML Data to speed up work'
                 name='copyData'
                 valuePropName='checked'
             >
                 <Checkbox>
-                    <Text className='cvat-text-color'>Copy data into CVAT</Text>
+                    <Text className='cvat-text-color-black'>Copy data into AIML Data</Text>
                 </Checkbox>
             </Form.Item>
         );
@@ -256,7 +256,7 @@ class AdvancedConfigurationForm extends React.PureComponent<Props> {
                 valuePropName='checked'
             >
                 <Checkbox>
-                    <Text className='cvat-text-color'>Use LFS (Large File Support):</Text>
+                    <Text className='cvat-text-color-black'>Use LFS (Large File Support):</Text>
                 </Checkbox>
             </Form.Item>
         );
@@ -311,7 +311,7 @@ class AdvancedConfigurationForm extends React.PureComponent<Props> {
                 valuePropName='checked'
             >
                 <Checkbox>
-                    <Text className='cvat-text-color'>Use zip chunks</Text>
+                    <Text className='cvat-text-color-black'>Use zip chunks</Text>
                 </Checkbox>
             </Form.Item>
         );
@@ -321,7 +321,7 @@ class AdvancedConfigurationForm extends React.PureComponent<Props> {
         return (
             <Form.Item help='Using cache to store data.' name='useCache' valuePropName='checked'>
                 <Checkbox>
-                    <Text className='cvat-text-color'>Use cache</Text>
+                    <Text className='cvat-text-color-black'>Use cache</Text>
                 </Checkbox>
             </Form.Item>
         );

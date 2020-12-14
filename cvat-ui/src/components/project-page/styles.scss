@@ -1,4 +1,4 @@
-// Copyright (C) 2020 Intel Corporation
+    // Copyright (C) 2020 Intel Corporation
 //
 // SPDX-License-Identifier: MIT
 
@@ -53,4 +53,30 @@
 .cvat-project-top-bar-actions > button {
     display: flex;
     align-items: center;
+}
+
+h4.ant-typography, .ant-typography h4 {
+    margin-bottom: 0.5em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.ant-checkbox+span {
+    padding-right: 8px;
+    padding-left: 8px;
+    color: white;
+}
+
+.ant-table-thead>tr>th {
+    color: #fafafa;
+}
+
+.basic-task-spec-color {
+    color: white;
+}
+
+.cvat-text-color-black {
+    color: black;
 }
