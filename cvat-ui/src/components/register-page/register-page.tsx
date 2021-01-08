@@ -41,9 +41,13 @@ function RegisterPageComponent(props: RegisterPageComponentProps & RouteComponen
 
     return (
         <>
-            <Row justify='center' align='middle'>
+            <Row justify='center' align='bottom'>
+                <Text className='cvat-logo-color-register-1'>AIML&nbsp;</Text>
+                <Text className='cvat-logo-color-register-2'>Data</Text>
+            </Row>
+            <Row justify='center' align='top'>
                 <Col {...sizes}>
-                    <Title level={2}> Create an account </Title>
+                    <Text className='cvat-register-text-title'> Create an account </Text>
                     <RegisterForm
                         fetching={fetching}
                         userAgreements={userAgreements}
@@ -61,7 +65,7 @@ function RegisterPageComponent(props: RegisterPageComponentProps & RouteComponen
                     />
                     <Row justify='start' align='top'>
                         <Col>
-                            <Text strong>
+                            <Text strong className='cvat-register-text-color'>
                                 Already have an account?
                                 <Link to='/auth/login'> Login </Link>
                             </Text>

@@ -1,11 +1,3 @@
-// Copyright (C) 2020 Intel Corporation
-//
-// SPDX-License-Identifier: MIT
-
-.ant-form-item {
-    margin-bottom: 12px;
-}
-
 body {
     background-color: #101010;
 }
@@ -13,12 +5,7 @@ body {
 $logo-color1: #4ADD8F;
 $logo-color2: #7337FD;
 
-
-.cvat-register-text-color {
-    color: #fff;
-}
-
-.cvat-register-text-title {
+.cvat-login-text-title {
     margin-bottom: 0.5em;
     color: #fff;
     font-weight: 600;
@@ -26,16 +13,20 @@ $logo-color2: #7337FD;
     line-height: 2;
 }
 
-.cvat-logo-color-register-1 {
+.cvat-login-text-color {
+    color: #fff;
+}
+
+.cvat-logo-color-login-1 {
     color: $logo-color1;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 100px;
     margin-left: 10px;
 }
 
-.cvat-logo-color-register-2 {
+.cvat-logo-color-login-2 {
     color: $logo-color2;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 100px;
     margin-right: 20px;
 }

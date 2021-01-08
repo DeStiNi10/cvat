@@ -2,6 +2,7 @@
 //
 // SPDX-License-Identifier: MIT
 
+import './styles.scss';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
 import { Link, withRouter } from 'react-router-dom';
@@ -31,9 +32,13 @@ function LoginPageComponent(props: LoginPageComponentProps & RouteComponentProps
 
     return (
         <>
-            <Row justify='center' align='middle'>
-                <Col {...sizes}>
-                    <Title level={2}> Login </Title>
+            <Row justify='center' align='bottom' width='auto-width'>
+                <Text className='cvat-logo-color-login-1'>AIML&nbsp;</Text>
+                <Text className='cvat-logo-color-login-2'>Data</Text>
+            </Row>
+            <Row justify='center' align='top'>
+                <Col {...sizes} align='center'>
+                    <Text className='cvat-login-text-title'> Login </Text>
                     <LoginForm
                         fetching={fetching}
                         onSubmit={(loginData: LoginData): void => {
@@ -42,13 +47,13 @@ function LoginPageComponent(props: LoginPageComponentProps & RouteComponentProps
                     />
                     <Row justify='start' align='top'>
                         <Col>
-                            <Text strong>
+                            {/* <Text strong className='cvat-login-text-color'>
                                 New to AIML Data? Create
                                 <Link to='/auth/register'> an account</Link>
-                            </Text>
+                            </Text> */}
                         </Col>
                     </Row>
-                    {renderResetPassword && (
+                    {/* {renderResetPassword && (
                         <Row justify='start' align='top'>
                             <Col>
                                 <Text strong>
@@ -56,7 +61,7 @@ function LoginPageComponent(props: LoginPageComponentProps & RouteComponentProps
                                 </Text>
                             </Col>
                         </Row>
-                    )}
+                    )} */}
                 </Col>
             </Row>
             <CookieDrawer />
