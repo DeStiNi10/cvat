@@ -124,7 +124,7 @@ function DetectorRunner(props: Props): JSX.Element {
     return (
         <div className='cvat-run-model-content'>
             <Row align='middle'>
-                <Col span={4}>Model:</Col>
+                <Col span={4} className="cvat-text-color">Model:</Col>
                 <Col span={20}>
                     <Select
                         placeholder='Select a model'

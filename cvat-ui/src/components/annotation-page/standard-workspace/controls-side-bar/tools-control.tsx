@@ -522,7 +522,7 @@ export class ToolsControlComponent extends React.PureComponent<Props, State> {
                 </Row>
                 <Row align='middle' justify='start' style={{ marginTop: '5px' }}>
                     <Col>
-                        <Text>Tracking frames</Text>
+                        <Text className="cvat-text-color">Tracking frames</Text>
                     </Col>
                     <Col offset={2}>
                         <InputNumber

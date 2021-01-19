@@ -24,19 +24,19 @@ export default function DeployedModelsListComponent(props: Props): JSX.Element {
                 <Col md={22} lg={18} xl={16} xxl={14} className='cvat-models-list'>
                     <Row align='middle' style={{ padding: '10px' }}>
                         <Col span={3}>
-                            <Text strong>Framework</Text>
+                            <Text strong className='cvat-text-color'>Framework</Text>
                         </Col>
                         <Col span={3}>
-                            <Text strong>Name</Text>
+                            <Text strong className='cvat-text-color'>Name</Text>
                         </Col>
                         <Col span={3}>
-                            <Text strong>Type</Text>
+                            <Text strong className='cvat-text-color'>Type</Text>
                         </Col>
                         <Col span={10}>
-                            <Text strong>Description</Text>
+                            <Text strong className='cvat-text-color'>Description</Text>
                         </Col>
                         <Col span={5}>
-                            <Text strong>Labels</Text>
+                            <Text strong className='cvat-text-color'>Labels</Text>
                         </Col>
                     </Row>
                     {items}

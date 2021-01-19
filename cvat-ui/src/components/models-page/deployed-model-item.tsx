@@ -19,16 +19,16 @@ export default function DeployedModelItem(props: Props): JSX.Element {
     return (
         <Row className='cvat-models-list-item'>
             <Col span={3}>
-                <Tag color='purple'>{model.framework}</Tag>
+                <Tag color='green'>{model.framework}</Tag>
             </Col>
             <Col span={3}>
                 <Text className='cvat-text-color'>{model.name}</Text>
             </Col>
             <Col span={3}>
-                <Tag color='orange'>{model.type}</Tag>
+                <Tag color='blue'>{model.type}</Tag>
             </Col>
             <Col span={10}>
-                <Text style={{ whiteSpace: 'normal', height: 'auto' }}>{model.description}</Text>
+                <Text className='cvat-text-color' style={{ whiteSpace: 'normal', height: 'auto' }}>{model.description}</Text>
             </Col>
             <Col span={5}>
                 <Select showSearch placeholder='Supported labels' style={{ width: '90%' }} value='Supported labels'>
